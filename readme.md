@@ -1,12 +1,24 @@
 # angular-statemanager
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4
-and is packaged using [ng-packagr](https://github.com/dherges/ng-packagr) version 2.4.2. It provides
-an injectable class (service) that can be used in Angular projects to keep track of state in HTML controls,
+and is packaged using [ng-packagr](https://github.com/dherges/ng-packagr) version 2.4.2. It provides an
+injectable class (service) that can be used in Angular projects to keep track of state in HTML controls,
 e.g. the current page of a data grid. It uses `window.localStorage` to cache state data, so it won't work
 in browsers that don't support localStorage (but it won't break anything).
 
-## Installation
+## Building the package
+
+`git clone https://github.com/lkmylin/angular-statemanager <my-directory>`
+
+`cd <my-directory>`
+
+`npm install`
+
+`npm run packagr`
+
+After the build completes, output will be available in the `angular-statemanager` subdirectory.
+
+## Installation from npm
 
 `npm install @lkmylin/angular-statemanager`
 
