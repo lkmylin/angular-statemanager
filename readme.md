@@ -36,19 +36,19 @@ In your bootstrap module:
 
 * use `stateManager.SetValue(id, property, value)` to cache a value
 
-    * id is the control's unique ID
+    * `id` is the control's unique ID
 
-    * property is the property you want to cache, e.g. currentPage
+    * `property` is the key for the property/attribute you want to cache, e.g. `currentPage`
 
-    * value is the object you want to cache
+    * `value` is the object you want to cache
 
 * use `stateManager.GetValue(id, property, defaultValue)` to retrieve a value from the cache
 
-    * id is the control's unique ID
+    * `id` is the control's unique ID
 
-    * property is the property you want to retrieve, e.g. currentPage
+    * `property` is the key for the property/attribute you want to retrieve, e.g. `currentPage`
 
-    * default value is the default value to use in case the id:property pair you are looking for isn't cached
+    * `defaultValue` is the default value to return in case the id:property pair you are looking for isn't cached
       or the user has cleared their browsing history, etc.
 
 * if you want to see the entire contents of the cache, use `stateManager.CurrentState`
